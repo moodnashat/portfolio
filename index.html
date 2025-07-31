@@ -38,6 +38,7 @@
       font-weight: normal;
       color: #93c5fd;
       margin-bottom: 2rem;
+      min-height: 1.5rem;
     }
     section {
       padding: 2rem 1rem;
@@ -75,10 +76,9 @@
 </head>
 <body>
   <header>
-    <!-- صورة شخصية افتراضية (بدلها برابط صورتك لاحقًا) -->
     <img src="https://via.placeholder.com/150" alt="Mahmoud Nashat" class="profile-pic">
-    <h1>👋 Hi, I'm Mahmoud Nashat</h1>
-    <h2>Front-End Learner | Future Web Developer</h2>
+    <h1>👋 Hi, I'm <span style="color:#38bdf8">Mahmoud Nashat</span></h1>
+    <h2 id="typing"></h2>
   </header>
 
   <section class="about">
@@ -100,12 +100,52 @@
   <section class="social">
     <h2>Connect with Me</h2>
     <a href="mailto:nashat514@gmail.com">📧 Email</a>
+    <a href="tel:+201062569199">📞 Call Me (+20 106 256 9199)</a>
     <a href="https://github.com/moodnashat" target="_blank">💻 GitHub</a>
-    <a href="#" target="_blank">🔗 LinkedIn</a>
+    <a href="https://www.linkedin.com/in/mahmoud-nashat-517551164" target="_blank">🔗 LinkedIn</a>
   </section>
 
   <footer>
     <p>© 2025 Mahmoud Nashat. All rights reserved.</p>
   </footer>
+
+  <script>
+    const roles = [
+      'Front-End Learner',
+      'Future Web Developer',
+      'HTML, CSS & JS Enthusiast'
+    ];
+    let i = 0;
+    let j = 0;
+    let currentRole = '';
+    let isDeleting = false;
+    const typingElement = document.getElementById('typing');
+
+    function type() {
+      if (i < roles.length) {
+        if (!isDeleting && j <= roles[i].length) {
+          currentRole = roles[i].substring(0, j++);
+          typingElement.textContent = currentRole;
+        }
+        if (isDeleting && j >= 0) {
+          currentRole = roles[i].substring(0, j--);
+          typingElement.textContent = currentRole;
+        }
+        if (j === roles[i].length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+          return;
+        }
+        if (isDeleting && j === 0) {
+          isDeleting = false;
+          i++;
+          if (i === roles.length) i = 0;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+
+    type();
+  </script>
 </body>
 </html>
