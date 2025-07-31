@@ -42,7 +42,7 @@
     }
     section {
       padding: 2rem 1rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
     .skills img {
@@ -66,6 +66,43 @@
     .social a:hover {
       background-color: #16a34a;
       transform: scale(1.05);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .project-card h3 {
+      margin: 0.5rem 0;
+    }
+    .project-card p {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      min-height: 50px;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 8px 16px;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .project-card a:hover {
+      background-color: #2563eb;
     }
     footer {
       margin-top: 2rem;
@@ -105,6 +142,30 @@
     <a href="https://www.linkedin.com/in/mahmoud-nashat-517551164" target="_blank">🔗 LinkedIn</a>
   </section>
 
+  <section class="projects">
+    <h2>Projects Gallery</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Portfolio">
+        <h3>Portfolio Website</h3>
+        <p>My personal website showcasing my skills, projects, and contact information.</p>
+        <a href="https://moodnashat.github.io/portfolio/" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Calculator">
+        <h3>Calculator</h3>
+        <p>A simple and interactive calculator built with HTML, CSS, and JavaScript.</p>
+        <a href="#" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="To-Do List">
+        <h3>To-Do List App</h3>
+        <p>An easy-to-use to-do list application to manage daily tasks.</p>
+        <a href="#" target="_blank">View</a>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>© 2025 Mahmoud Nashat. All rights reserved.</p>
   </footer>
@@ -115,12 +176,8 @@
       'Future Web Developer',
       'HTML, CSS & JS Enthusiast'
     ];
-    let i = 0;
-    let j = 0;
-    let currentRole = '';
-    let isDeleting = false;
+    let i = 0, j = 0, currentRole = '', isDeleting = false;
     const typingElement = document.getElementById('typing');
-
     function type() {
       if (i < roles.length) {
         if (!isDeleting && j <= roles[i].length) {
@@ -131,20 +188,11 @@
           currentRole = roles[i].substring(0, j--);
           typingElement.textContent = currentRole;
         }
-        if (j === roles[i].length) {
-          isDeleting = true;
-          setTimeout(type, 1000);
-          return;
-        }
-        if (isDeleting && j === 0) {
-          isDeleting = false;
-          i++;
-          if (i === roles.length) i = 0;
-        }
+        if (j === roles[i].length) { isDeleting = true; setTimeout(type, 1000); return; }
+        if (isDeleting && j === 0) { isDeleting = false; i++; if (i === roles.length) i = 0; }
       }
       setTimeout(type, isDeleting ? 50 : 100);
     }
-
     type();
   </script>
 </body>
