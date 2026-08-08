@@ -1,20 +1,45 @@
-# 📊 Excel Sales Analysis
+# 📊 Excel Sales Analysis Dashboard
 
-## Objective
-Analyze a sales dataset in Microsoft Excel to identify revenue trends, top products, regional performance, and actionable business insights.
+A portfolio project demonstrating how Excel can turn raw sales records into KPIs, trends, and business insights.
 
-## Planned Analysis
-- Data cleaning and validation
-- Excel formulas and calculated columns
-- PivotTables and PivotCharts
-- KPI calculations
-- Monthly and regional trends
-- Interactive dashboard
+![Sales dashboard preview](assets/sales-dashboard-preview.svg)
 
-## Deliverables
-- Source dataset
-- Cleaned Excel workbook
-- Dashboard
-- Short business-insights summary
+## 🎯 Business Problem
 
-> This project is part of Mahmoud Nashat's Data Analyst portfolio. Results will be documented from the actual analysis rather than invented sample findings.
+Analyze sales performance across regions, categories, products, and months to identify where revenue is coming from and where management should focus.
+
+## 🛠️ Skills Demonstrated
+
+- Data validation and cleaning
+- Calculated fields
+- PivotTable / PivotChart analysis
+- KPI design
+- Trend analysis
+- Business insights
+- Dashboard presentation
+
+## 📊 Current Results
+
+| KPI | Result |
+|---|---:|
+| Total Sales | 450,350 |
+| Orders | 24 |
+| Units Sold | 142 |
+| Average Order Value | 18,764.58 |
+| Top Region | Cairo |
+| Top Category | Electronics |
+| Top Product | Laptop |
+
+## 📁 Project Structure
+
+- `data/sales_data.csv` — source dataset
+- `analysis/README.md` — analysis guide and findings
+- `assets/sales-dashboard-preview.svg` — portfolio dashboard preview
+
+## 🔎 Business Insight
+
+The dataset shows a clear concentration of revenue in Electronics and strong performance from Cairo. The dashboard is designed to help a decision-maker quickly identify the strongest markets and products.
+
+## ⚠️ Reproducibility Note
+
+The source data is a synthetic portfolio dataset. The accompanying Excel workbook was prepared separately as the working analysis file; the repository contains the reproducible source data and documented analysis.
