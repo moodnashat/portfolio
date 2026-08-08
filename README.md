@@ -1,24 +1,33 @@
-# Mahmoud Nashat — Data Analyst Portfolio
+# 📊 Mahmoud Nashat — Junior Data Analyst Portfolio
 
-Personal portfolio website showcasing my transition into **Data Analysis** and my technical background in programming and industrial automation.
+A practical Data Analyst portfolio built around **Excel, SQL, Power BI, and Python**, with a specialization in manufacturing and operational analytics.
 
-## Current Focus
+## ⭐ Featured Projects
 
-- 📊 Excel
-- 🗄️ SQL
-- 📈 Power BI
-- 🐍 Python for Data Analysis
+| Project | Tools | Focus |
+|---|---|---|
+| [📊 Excel Sales Analysis](projects/excel-sales-analysis) | Excel | KPIs, PivotTables, dashboard, sales insights |
+| [🗄️ SQL Sales Analysis](projects/sql-data-analysis) | SQL | Business queries, aggregation, trends |
+| [📈 Power BI Sales Dashboard](projects/powerbi-dashboard) | Power BI | KPI dashboard and business reporting |
+| [🐍 Python Sales EDA](projects/python-data-analysis) | Python, Pandas, Matplotlib | Data quality, EDA, visualization |
+| [🏭 Manufacturing Analytics](projects/manufacturing-analysis) | Excel, SQL, Power BI, Python | Production, quality, downtime |
 
-## Portfolio
+## 🧰 Analytics Toolkit
 
-The live website presents my Data Analyst profile, skills, projects, and professional background.
+**Excel** · **SQL** · **Power BI** · **Python** · **Pandas** · **Matplotlib**
 
-## Background
+## 🏭 Domain Strength
 
-My previous programming and industrial automation experience gives me a practical technical perspective that I plan to apply to data analysis and manufacturing analytics.
+My background in industrial automation and manufacturing gives me practical context for analyzing production, quality, downtime, efficiency, and operational KPIs.
 
-## Contact
+## 🔗 Main Profile
 
-- LinkedIn: https://www.linkedin.com/in/mahmoud-nashat-517551164
-- GitHub: https://github.com/moodnashat
-- Email: nashat514@gmail.com
+👉 [View my GitHub profile](https://github.com/moodnashat)
+
+## 🌐 Portfolio Website
+
+👉 [Open my portfolio website](https://moodnashat.github.io/portfolio/)
+
+## 📌 Project Philosophy
+
+Each project is documented around a **business problem → analysis → insight → decision-support** workflow. Synthetic datasets are clearly labeled and no confidential company data is used.
