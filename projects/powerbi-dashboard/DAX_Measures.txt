@@ -1,0 +1,4 @@
+Total Sales = SUM(Sales[Sales])
+Total Orders = DISTINCTCOUNT(Sales[Order_ID])
+Total Quantity = SUM(Sales[Quantity])
+Average Order Value = DIVIDE([Total Sales], [Total Orders])
