@@ -1,36 +1,44 @@
-# 🏭 Manufacturing Production & Quality Analysis
+# 🏭 Manufacturing Production & Quality Analytics
 
-A synthetic manufacturing analytics case study designed to demonstrate how production data can be converted into operational KPIs and actionable insights.
+A synthetic manufacturing case study that connects production operations with data analysis and KPI-driven decision making.
 
-> **Data note:** This dataset is synthetic and does not contain confidential company information.
+![Manufacturing dashboard preview](assets/manufacturing-dashboard-preview.svg)
 
-## KPIs
+> **Data note:** The dataset is synthetic and contains no confidential company information.
 
-- Production Target
-- Units Produced
-- Achievement Rate
-- Defect Rate
-- Downtime
-- Estimated Good Units
+## 🎯 Business Problem
 
-## Business Questions
+Management needs a simple view of production performance, target achievement, defects, and downtime so that operational issues can be prioritized.
 
-- Which production line performs best against target?
+## 📊 KPIs
+
+- Production Target: **6,200 units**
+- Units Produced: **5,962 units**
+- Target Achievement: **96.16%**
+- Defects: **169 units**
+- Defect Rate: **2.83%**
+- Downtime: **356 minutes**
+
+## 🔎 Business Questions
+
+- Which production lines miss their targets?
 - Where are defects concentrated?
-- Which line has the highest downtime?
-- What operational areas should management investigate?
+- Where is downtime concentrated?
+- Which operational issues should management investigate first?
 
-## Tools
+## 🛠️ Tools
 
 Excel · SQL · Power BI · Python
 
-## Dataset
+## 📁 Project Structure
 
-`data/manufacturing_data.csv`
+- `data/manufacturing_data.csv` — synthetic source data
+- `assets/manufacturing-dashboard-preview.svg` — dashboard concept/preview
 
-## Next Deliverables
+## 💼 Why This Project Matters
 
-- KPI calculations
-- SQL analysis
-- Power BI operations dashboard
-- Python quality/downtime analysis
+This project demonstrates how manufacturing domain knowledge can be combined with Data Analysis to create operational KPIs and support decisions around production, quality, and maintenance.
+
+## ⚠️ Reproducibility
+
+The dataset is intentionally synthetic and small enough to reproduce manually or with SQL/Python. The dashboard preview is a portfolio visualization; a native `.pbix` file can be added after building the report in Power BI Desktop.
