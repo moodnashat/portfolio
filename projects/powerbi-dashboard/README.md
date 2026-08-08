@@ -1,30 +1,42 @@
 # 📈 Power BI Sales Dashboard
 
-A business intelligence dashboard built from the shared sales dataset used by the Excel and SQL projects.
+A Business Intelligence dashboard specification based on the shared sales dataset.
 
-## KPIs
+![Dashboard preview](../excel-sales-analysis/assets/sales-dashboard-preview.svg)
 
-- Total Sales
-- Total Orders
-- Total Quantity
-- Average Order Value
+## 🎯 Business Goal
 
-## Recommended Visuals
+Give a decision-maker a one-page view of revenue, order volume, product performance, regional performance, and monthly trends.
+
+## 📊 KPI Layer
+
+- Total Sales — **450,350**
+- Total Orders — **24**
+- Total Quantity — **142**
+- Average Order Value — **18,764.58**
+
+## 📈 Visual Layer
 
 - Monthly sales trend
 - Sales by region
 - Sales by category
-- Top products by revenue
-- Region and category slicers
+- Top products
+- Region/category slicers
 
-## Data
+## 🧠 Recommended Data Model
 
-Source dataset: `../excel-sales-analysis/data/sales_data.csv`
+For a production Power BI solution, the current sales table can be expanded into a star schema with:
 
-## Deliverables
+- FactSales
+- DimDate
+- DimProduct
+- DimRegion
+- DimCategory
 
-The Power BI `.pbix` file and dashboard screenshots will be added after the dashboard is built and validated in Power BI Desktop.
+## 📁 Source
 
-## Portfolio Note
+`../excel-sales-analysis/data/sales_data.csv`
 
-The project is intentionally linked to the Excel and SQL analysis so the same business dataset can be explored through multiple analytics tools.
+## ⚠️ Important Portfolio Note
+
+The visual above is a **dashboard preview**, not a native Power BI screenshot. The `.pbix` file should be created and validated in Power BI Desktop before being presented as a completed Power BI deliverable. This keeps the portfolio accurate and interview-safe.
