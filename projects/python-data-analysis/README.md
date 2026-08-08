@@ -1,31 +1,28 @@
-# 🐍 Python Sales Data Analysis
+# 🐍 Python Sales Exploratory Data Analysis
 
-An exploratory data analysis project using the same sales dataset used by the Excel, SQL, and Power BI projects.
+Exploratory Data Analysis (EDA) using Python and Pandas on the portfolio sales dataset.
 
-## Planned Analysis
+## Objectives
 
-- Load and inspect the dataset with Pandas
-- Validate data types and missing values
-- Calculate descriptive statistics
-- Analyze sales by region, category, and product
-- Explore monthly sales trends
-- Create visualizations with Matplotlib
+- Inspect data quality and missing values
+- Recalculate sales from quantity and unit price
+- Measure sales, orders, quantity, and average order value
+- Compare regions and categories
+- Analyze monthly sales trends
+- Produce reusable charts
 
 ## Tools
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
+Python · Pandas · Matplotlib
 
-## Dataset
+## Run
 
-`../excel-sales-analysis/data/sales_data.csv`
+```bash
+python sales_eda.py
+```
 
-## Deliverables
+The script writes charts to `outputs/`.
 
-The analysis notebook/script and exported charts will be added after the analysis is completed and validated.
+## Portfolio Principle
 
-## Portfolio Approach
-
-The project shares the same source dataset as the Excel, SQL, and Power BI work so the analytical results can be compared across tools.
+The analysis uses the same business dataset as the Excel, SQL, and Power BI projects so the portfolio demonstrates how one analytical problem can be solved across multiple tools.
