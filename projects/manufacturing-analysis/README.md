@@ -1,28 +1,41 @@
 # 🏭 Manufacturing Data Analysis
 
-## Objective
-Analyze manufacturing-style operational data to understand production, quality, downtime, and efficiency.
-
-## Planned KPIs
-- Production volume
-- Target achievement
-- Defect rate
-- Downtime
-- Machine utilization
-- Production efficiency
-- Quality trends
+A portfolio project designed around manufacturing KPIs and operational questions found in production environments.
 
 ## Business Questions
-- Which periods have the highest and lowest production?
-- Where are quality problems concentrated?
-- Which machines or production lines have the most downtime?
-- How does actual production compare with target?
-- Which factors appear associated with lower efficiency?
 
-## Planned Tools
-Excel · SQL · Power BI · Python
+- How much was produced by day and month?
+- Which production lines perform best?
+- What is the defect rate?
+- How much downtime is recorded?
+- Which products or lines need attention?
+- How does actual production compare with target?
+
+## Planned KPIs
+
+- Production Quantity
+- Target Achievement %
+- Defect Rate %
+- Downtime Hours
+- Overall Efficiency
+
+## Tools
+
+Excel → SQL → Power BI → Python
+
+## Important Note
+
+This project will use synthetic/public data only. It will not contain confidential company data or real production records.
+
+## Deliverables
+
+- Clean dataset
+- Excel analysis
+- SQL analysis
+- Power BI dashboard
+- Python EDA
+- Business insights
 
 ## Why This Project
-This project connects data analysis with Mahmoud's background in industrial automation and manufacturing, creating a portfolio case study that reflects a real-world domain.
 
-> The dataset and conclusions will be clearly identified as synthetic/demo data unless a public real dataset is used.
+It connects data analysis with Mahmoud's technical background in industrial automation and manufacturing while keeping the portfolio data safe and reproducible.
